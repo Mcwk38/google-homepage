@@ -1,0 +1,161 @@
+/* Mise en forme globale */
+a {
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* Mise en forme du header */
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "lnv rnv";
+    align-content: center;
+
+}
+#left-navbar {
+    grid-area: lnv;
+    padding-left: 30px;
+    padding-top: 20px;
+    display: inline-block;
+    align-content: center;
+}
+#about {
+    padding-right: 15px;
+}
+#right-navbar {
+    grid-area: rnv;
+    justify-self: end;
+    padding-right: 30px;
+    padding-top: 20px;
+    display: inline-block;
+    align-content: center;
+}
+#apps {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    vertical-align: middle;
+    opacity: 70%;
+}
+#apps:hover {
+    opacity: 100%;
+}
+#sign {
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 8px 14px 8px 14px;
+    border-radius: 2px;
+    padding-left: 15px;
+}
+#sign:hover {
+    text-decoration: none;
+}
+#images {
+    padding-left: 15px;
+}
+/* Mise en forme du centre de la page */
+#logo {
+    display: block;
+    margin-top: 47px;
+    padding-top: 109px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#searchbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 584px;
+    height: 40px;
+    border-radius: 40px;
+    text-indent: 20px;
+    border: 1px solid #dfe1e5;
+  } 
+#searchbar:focus, #searchbar:hover {
+    box-shadow: 2px 3px 5px #BDBDBD;
+  }
+/* Mise en forme des boutons */
+#boutons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "searchbtn luckybtn";
+    padding-top: 20px;
+}
+#searchbtn {
+    grid-area: searchbtn;
+    justify-self: end;
+    margin: 11px 6px 11px 4px;
+    background-color: #f2f2f2;
+    color: #5F6368;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #f2f2f2;
+}
+#luckybtn {
+    grid-area: luckybtn;
+    justify-self: start;
+    margin: 11px 4px 11px 6px;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #5F6368;
+    padding: 5px 16px 5px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #f2f2f2;
+}
+#searchbtn:hover, #luckybtn:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+/* Mise en forme du footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e2e2e2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lft rft";
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#left-footer {
+    grid-area: lft;
+}
+#right-footer {
+    grid-area: rft;
+    justify-self: flex-end;
+    padding-right: 50px;
+    text-indent: -20px;
+}
+#footer a {
+    color: #5f6368;
+    font-size: 14px;
+}
+#advert {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#business {
+    padding-right: 20px;
+}
+#settings {
+    padding-left: 20px;
+}
+#terms {
+    padding-left: 20px;
+}

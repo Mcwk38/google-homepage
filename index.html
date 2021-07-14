@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<head><title>Google Homepage - Odin Project</title></head>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
 <body>
-    <main>
-        <div id="navbar">
-            <div id="left-navbar">
-                <a href="">About</a>
-                <a href="">Store</a>
-
-            </div>
-            <div id="right-navbar">
-                <a href="">Gmail</a>
-                <a href="">Images</a>
-                <a href=""><img src="images/icone-apps.png"></a>
-                <a href="">Sign In</a>
-
-            </div>
-
+    <div id="navbar"> <!--Début du header-->
+        <div id="left-navbar"> <!--Header gauche-->
+            <a id="about" href="">About</a>
+            <a id="store" href="">Store</a>
         </div>
-        <div id="center">
-            <a href=""><img src="images/logo-google.png"></a>
-                <form>
-                    <input type="text">
-                    <button type="button">Google Search</button>
-                    <button type="button">I'm Feeling Lucky</button>
-                </form>
-
+        <div id="right-navbar"> <!--Header droit-->
+            <a id="gmail" href="">Gmail</a>
+            <a id="images" href="">Images</a>
+            <a id="apps" href=""><img src="images/icone-apps.png" alt="Apps"></a>
+            <a id="sign" href="">Sign In</a>
         </div>
-        <div id="footer">
-            <div id="left-footer">
-                <a href="">Advertising</a>
-                <a href="">Business</a>
-                <a href="">How Search Works</a>
-            </div>    
-            <div id="right-footer">
-                <a href="">Privacy</a>
-                <a href="">Terms</a>
-                <a href="">Settings</a>
+    </div><!--Fin du header-->
+    <div id="centre"> <!--Début du centre de la page-->
+        <img id="logo" src="images/logo-google.png" alt="logo Google">
+        <!--Début du formulaire de recherche-->
+        <form action="get" name="search" id="search">
+            <input id="searchbar" type="text" name="searchbar">
+            <div id="boutons">
+                <input id="searchbtn" type="submit" name="search-button" value="Google Search">
+                <input id="luckybtn" type="submit" name="feeling-lucky" value="I'm Feeling Lucky">
             </div>
+        </form> <!--Fin du formulaire de recherche-->
+    </div> <!--Fin du centre de la page-->
+    <div id="footer"> <!--Début du footer-->
+        <div id="left-footer"> <!--Footer gauche-->
+            <a id="advert" href="">Advertising</a>
+            <a id="business" href="">Business</a>
+            <a id="how" href="">How Search works</a>
         </div>
-    </main>
+        <div id="right-footer"> <!--Footer droit-->
+            <a id="privacy" href="">Privacy</a>
+            <a id="terms" href="">Terms</a>
+            <a id="settings" href="">Settings</a>
+        </div> <!--Fin du footer-->
+    </div>
 </body>
